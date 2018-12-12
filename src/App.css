@@ -1,19 +1,15 @@
 .App{
     margin-top: 47px;
-    }
-.Leftbar{
-    float: left;
-    width: 15%;
-    position: fixed;
-     /* only for demonstration, should be removed */
-    
-}
-.main {
     font-family: "Times New Roman", Times, serif;
     float: left;
     width: 100%;
     height: 100%;
     }
+.Leftbar{
+    float: left;
+    width: 15%;
+    position: fixed;
+}
  
 /*navigation-bar*/
 .toollabel {
@@ -86,7 +82,7 @@
     background-color: rgba(12,91,76,.9);
 }
 .left-view,.right-view{
-    min-height: 640px;
+    min-height: 750px;
 }
 
 .responsetable{
@@ -140,6 +136,31 @@
     background-color: #145d4e;
     color: white;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+/****scroll-bar********/
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(158, 228, 214, 0.8);
+    box-shadow: inset 0 0 5px grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#145d4e ; 
+    box-shadow: inset 0 0 10px rgba(15, 36, 32, 0.7);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(33, 122, 104, 0.8);
+    box-shadow: inset 0 0 10px rgba(15, 36, 32, 0.7);
+}
+
+/***sort-bar****/
+
 ul{
     margin-left: -40px;
 }
@@ -162,26 +183,3 @@ ul{
     border-radius: 5px;
     
  }
-
-/*Scroll bar*/
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgba(158, 228, 214, 0.8);
-    box-shadow: inset 0 0 5px grey; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background:#145d4e ; 
-    box-shadow: inset 0 0 10px rgba(15, 36, 32, 0.7);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background:rgba(33, 122, 104, 0.8);
-    box-shadow: inset 0 0 10px rgba(15, 36, 32, 0.7);
-}

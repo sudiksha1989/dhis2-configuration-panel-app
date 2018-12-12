@@ -17,6 +17,8 @@ const dataElementReducer = (state = DataElementState, action) => {
         sampleSource: action.sampleSourcePayload.options.map(opVal1 => {
           return { value: opVal1.id, name: opVal1.name };
         }),
+        firstChar:action.firstChar,
+        attrValueUpdate:action.optnArr,
       }
       break;
     case 'UPDATE-TEI':
@@ -65,6 +67,7 @@ const dataElementReducer = (state = DataElementState, action) => {
         formNameCreated:[...state.formNameCreated,action.formName],
        }
       break;
+      
   }
   return state
 }
