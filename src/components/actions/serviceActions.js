@@ -32,9 +32,7 @@ export const getDataElementValues = () => dispatch => {
         testTypePayload: res2.data,
         guidelinePayload: res3.data,
         sampleSourcePayload: res4.data,
-        firstChar: res1.data.trackedEntityInstances.map(attrVal => 
-         (attrVal.attributes[0].value.charAt(0)).filter((v, i) => attrVal.attributes[0].value.charAt(0).indexOf(v) === i)
-          ),
+        firstChar: res1.data.trackedEntityInstances.map(attrVal => attrVal.attributes[0].value.charAt(0)),
        // optnArr: optnArr,
       })
     })).catch(err =>

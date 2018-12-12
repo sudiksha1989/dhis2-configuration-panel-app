@@ -17,7 +17,7 @@ const dataElementReducer = (state = DataElementState, action) => {
         sampleSource: action.sampleSourcePayload.options.map(opVal1 => {
           return { value: opVal1.id, name: opVal1.name };
         }),
-        firstChar:action.firstChar,
+        firstChar:action.firstChar.sort().filter((v, i) => action.firstChar.indexOf(v) === i),
         attrValueUpdate:action.optnArr,
       }
       break;

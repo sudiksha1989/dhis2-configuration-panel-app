@@ -27,7 +27,7 @@ class DataElements extends React.Component {
                         <form onSubmit={event => handleSubmit(this, event)}>
                             <FormGroup controlId="formTEI" validationState={this.props.dataElement.attrValueValidy}>
                                 <ControlLabel>ANTIBIOTICS</ControlLabel>
-                                <ul class="grid">{this.createSortTable}</ul>
+                                <ul class="grid">{this.props.dataElement.firstChar.map(str=><li><a><span>{str}</span></a></li>)}</ul>
                                 <FormControl componentClass="select" onChange={event => handleChange(this, event, 'UPDATE-TEI')} multiple>
                                     {this.props.dataElement.attrValue.map((arr) => <option value={arr.value}>{arr.name}</option>)}
                                 </FormControl>
